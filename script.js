@@ -48,7 +48,7 @@ const gifts = [
   {
     name: '礼物 8 · 软乎乎腰靠~',
     desc: '希望它在你学习、休息或者发呆的时候，都能稳稳托住你的舒服和小幸福。',
-    image: "images/腰靠/jpg"
+    image: "images/腰靠.jpg"
   }
 ];
 
