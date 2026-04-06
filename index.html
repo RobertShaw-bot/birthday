@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>生日蛋糕礼物抽奖</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-bg"></div>
+  <main class="app">
+    <section class="hero">
+      <p class="eyebrow">To My Love ✨</p>
+      <h1>生日礼物蛋糕抽奖</h1>
+      <p class="subtitle">现在蛋糕会清楚地分成 8 份，点开每一块，领取今天的小惊喜。</p>
+    </section>
+
+    <section class="cake-stage">
+      <div class="sparkles" aria-hidden="true"></div>
+      <div class="cake-wrapper">
+        <div class="cake-shadow"></div>
+        <div class="cake-base"></div>
+        <svg class="cake-svg" id="cakeSvg" viewBox="0 0 400 400" aria-label="8块礼物蛋糕" role="img"></svg>
+        <div class="cake-center">
+          <div class="center-label">Happy<br>Birthday</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-card hidden" id="giftCard">
+        <button class="close-btn" id="closeBtn" aria-label="关闭">×</button>
+        <div class="gift-card-top">
+          <span class="badge" id="giftIndex">第 1 份礼物</span>
+          <h2 id="giftName">礼物名称</h2>
+          <p id="giftDesc">这里会显示礼物说明。</p>
+        </div>
+
+        <div class="gift-image-wrap">
+          <button class="carousel-btn prev hidden" id="prevImageBtn" aria-label="上一张">‹</button>
+          <img id="giftImage" src="" alt="礼物图片" />
+          <button class="carousel-btn next hidden" id="nextImageBtn" aria-label="下一张">›</button>
+          <div class="carousel-footer hidden" id="carouselFooter">
+            <span class="carousel-count" id="imageCounter">1 / 1</span>
+            <div class="carousel-dots" id="imageDots"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hint" id="hintText">一共有 8 份礼物，每一块蛋糕都藏着一份心意 💖</div>
+      <button class="reset-btn" id="resetBtn">重新开始</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
