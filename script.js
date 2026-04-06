@@ -35,9 +35,15 @@ const gifts = [
     image: 'images/淡雪草莓.jpg'
   },
   {
-    name: '礼物 7 · 手写信',
-    desc: '有些喜欢不太会当面说，那就悄悄写进字里行间送给你。',
-    image: createGiftSvg('信件', ['#fff6d8', '#ff9b6a'])
+    name: '礼物 7 · 花知晓 · 蝴蝶云肩胭脂雪腮红~',
+    desc: '想把少女感、浪漫感和我的偏爱一起打包送给你，愿你永远像今天一样好看又开心。',
+    images: [
+      'images/腮红1.jpg',
+      'images/腮红2.jpg',
+      'images/腮红3.jpg',
+      'images/腮红4.jpg',
+      'images/腮红5.jpg', 
+    ]
   },
   {
     name: '礼物 8 · 神秘大奖',
